@@ -1,0 +1,69 @@
+:root{
+    --color-dark:#000;
+    --color-white: #fff;
+    --color-light:#ababab;
+    --color-purple: #5d15a5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.banner video{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner .clock{
+    gap: 50px;
+    max-width: 800px;
+    background: transparent;
+    border: 2px solid rgba( 255, 255, 255,  .2);
+    backdrop-filter:  blur(20px);
+    box-shadow: 0 0 10px rgb(0, 0, 0, .12);
+    color: #fff;
+    border-radius:10px;
+    padding:  30px 40px;
+    display: flex;
+    z-index: 1;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.banner .clock span{
+    font-size: 150px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    
+
+}
+
+.banner .clock span:not(:last-child)::after{
+    content: ':';
+    margin-bottom: 25px;
+    color: var(--color-light);
+}
+
+h2 strong{
+    color: var(--color-purple);
+}
